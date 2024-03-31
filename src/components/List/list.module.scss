@@ -1,0 +1,116 @@
+@import '../../styles/vars.scss';
+
+
+.listItem{
+    width: 600px;
+    margin: 15px 0px 15px 0px;
+    box-shadow: 0px 7px 7px 7px rgba(0,0,0,0.21);
+    border-radius: 15px;
+    background-color: $main_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    &__title {
+        font-size: 34px;
+        &::first-letter {
+            font-size: 36px;
+            text-transform: capitalize;
+        }
+        margin: 0px 0px 20px 0px;
+    }
+    &__btnWrapper {
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    &__bookmark {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 24px;
+        transition: all 0.3s ease-in-out 0s;
+        align-self: flex-start;
+         span {
+            color: $main_color;
+         }
+
+         &:hover {
+            box-shadow: 0px 2px 5px 3.5px rgba(0,0,0,0.21);
+         }
+    }
+
+    &__bookmarkActive {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        background-color: $main_color;
+        transition: all 0.3s ease-in-out 0s;
+        font-size: 24px;
+        align-self: flex-start;
+         span {
+            color: white;
+         }
+
+    }
+
+    &__audio {
+        margin: 20px 0px 20px 0px;
+        background-color: transparent;
+        span {
+            color: #fff;
+        }
+    }
+
+    &__phonetic {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__definition {
+        font-size: 18px;
+        margin: 10px 0px 10px 0px;
+        line-height: 24px;
+
+    }
+
+    &__example {
+        position: relative;
+        font-size: 18px;
+        padding: 0px 0px 0px 10px;
+        margin: 10px 0px 20px 0px;
+        line-height: 22px;
+        font-style: italic;
+        &::before {
+            content: '';
+            background-color: white;
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__btn {
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: white;
+        color: $main_color;
+        font-size: 18px;
+        align-self: flex-end;
+        transition: all 0.2s ease-out 0s;
+        &:hover {
+            box-shadow: 0px 2px 5px 3.5px rgba(0,0,0,0.21);
+        }
+    }
+}

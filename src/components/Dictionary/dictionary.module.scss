@@ -1,0 +1,62 @@
+@import '../../styles/vars.scss';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease-out 0s;
+  margin: 20px 0px 10px 0px;
+  &__item {
+    box-shadow: 0px 7px 7px 2px rgba(0,0,0,0.21);
+    background-color: white;
+    height: 50px;
+    flex: 0 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: all 0.2s ease-out 0s;
+    text-transform: uppercase;
+    color: $main_color;
+    cursor: pointer;
+
+    &_active {
+        box-shadow: 0px 7px 7px 2px rgba(0,0,0,0.21);
+        background-color: $main_color;
+        height: 50px;
+        transition: all 0.2s ease-out 0s;
+        flex: 0 1 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    &_item {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}

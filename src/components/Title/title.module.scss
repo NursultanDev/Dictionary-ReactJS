@@ -1,0 +1,10 @@
+@import '../../styles/vars.scss';
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $main_color;
+}
