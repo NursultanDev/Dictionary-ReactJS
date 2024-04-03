@@ -4,6 +4,10 @@ import SearchBar from "../SearchBar/SearchBar";
 import styles from "./dictionary.module.scss";
 
 export default function Dictionary() {
+  //for popup
+  const[popupState, setPopupState] = useState(false);
+  //for list Item deleting state
+  const[listItemState, setListItemState] = useState(false);
   //search query for searching in the list
   const [searchQuery, setSearchQuery] = useState("");
   //key word for fetch the data
@@ -32,6 +36,13 @@ export default function Dictionary() {
       localStorage.setItem("words", JSON.stringify(word));
     };
   }, []);
+
+  useEffect(() =>{
+    console.log(`popupState ${popupState}`);
+  }, [popupState]);
+  useEffect(() =>{
+    console.log(`listItemState ${listItemState}`);
+  }, [popupState]);
 
   function fetchWord() {
     const res = `${api}${keyWord}`;
@@ -62,9 +73,10 @@ export default function Dictionary() {
   }
 
   function onDelete(id) {
-    if (confirm("ARE YOU SURE MAN?")) {
+    if(confirm("ARE YOU SURE MAN?")) {
       setWord((prevWords) => {
         return prevWords.filter((word) => word.id !== id);
+  
       });
     }
   }
@@ -88,7 +100,6 @@ export default function Dictionary() {
       setToggleTab(2)
     }
   }
-
 
   return (
     <div className={styles.wrapper} >

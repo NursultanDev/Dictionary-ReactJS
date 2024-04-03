@@ -50,6 +50,46 @@
     }
 }
 
+@media (max-width: 635px) {
+    .searchBar {
+        &__searchItem {
+
+            width: 360px;
+        }
+
+        &__input{
+            width: 300px;
+        }
+
+    }
+}
+@media (max-width: 500px) {
+    .searchBar {
+        &__searchItem {
+
+            width: 300px;
+        }
+
+        &__input{
+            width: 240px;
+        }
+
+    }
+}
+@media (max-width:390px) {
+    .searchBar {
+        &__searchItem {
+
+            width: 260px;
+        }
+
+        &__input{
+            width: 200px;
+        }
+
+    }
+}
+
 .searchBar__title {
     font-size: 32px;
     text-align: center;
