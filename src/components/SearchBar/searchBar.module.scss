@@ -48,47 +48,41 @@
             box-shadow: 0px 7px 7px 3.5px rgba(0,0,0,0.21);
         }
     }
-}
-
-@media (max-width: 635px) {
-    .searchBar {
-        &__searchItem {
-
-            width: 360px;
-        }
-
-        &__input{
-            width: 300px;
-        }
-
+    @media (max-width: 635px) {
+            &__searchItem {
+    
+                width: 360px;
+            }
+    
+            &__input{
+                width: 300px;
+            }
     }
-}
-@media (max-width: 500px) {
-    .searchBar {
-        &__searchItem {
-
-            width: 300px;
-        }
-
-        &__input{
-            width: 240px;
-        }
-
+    @media (max-width: 500px) {
+            &__searchItem {
+    
+                width: 300px;
+            }
+    
+            &__input{
+                width: 240px;
+            }
+    
     }
-}
-@media (max-width:390px) {
-    .searchBar {
-        &__searchItem {
-
-            width: 260px;
-        }
-
-        &__input{
-            width: 200px;
-        }
-
+    @media (max-width:390px) {
+            &__searchItem {
+    
+                width: 260px;
+            }
+    
+            &__input{
+                width: 200px;
+            }
+    
     }
+    
 }
+
 
 .searchBar__title {
     font-size: 32px;
